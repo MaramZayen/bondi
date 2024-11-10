@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bondi 1</title>
+    <link rel="stylesheet" href="bondi1.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <nav class="navbar">
+        <div class="container">
+            <a >
+                <img src="bondi_logo.png" class="navbar_img">
+            </a>
+            <div class="container_left">
+            <ul class="navbar_ul">
+                <li class="nav-item"><a  class="nav_link" href="#landing">Home</a> </li>
+                <li class="nav-item"><a  class="nav_link" href="#features">Services</a></li>
+                <li class="nav-item"><a  class="nav_link" href="#our_work">Portfolio</a></li>
+                <li class="nav-item"><a  class="nav_link" href="#about">About</a></li>
+                <li class="nav-item"><a  class="nav_link" href="#footer">Contact</a></li>
+            </ul>
+            <div class="bar">
+            <span >|</span>
+            </div>
+            <div class="search">
+                
+                <i class="fa-solid fa-magnifying-glass"></i>
+              </div>
+            <a href="#" class="login">login</a>
+            </div>
+        </div>
+    </nav>
+    <div class="landing">
+        <div class="text_landing">
+            <h1>Unleash Your Digital Potential</h1>
+            <p>We design innovative digital experiences to enhance your brand and strengthen your online presence</p>
+            <div class="Started">
+                <a class="" href="#">Get Started</a>
+            </div>
+        </div>
+    </div>
+    <div class="features">
+        <div class="brand">
+            <img class="img_brand" src="img1.png">
+            <h2>Empowering Your Brand</h2>
+            <p>ELEVATING BRANDS WITH DIGITAL INNOVATION</p>
+            <div class="vertical-line1"></div>
+        </div>
+        <br> <br>
+        <div class="feat">
+            <div class="feats">
+                <img src="img2.png" class="img_feat">
+                <h2 class="Graphic">Graphic Design</h2>
+                <p>Delivering bold and inspiring designs that reflect your brand’s unique identity</p>
+            </div>
+
+            <div class="feats">
+                <img src="img3.png" class="img_feat">
+                <h2 class="Dynamic">Dynamic Website</h2>
+                <p>Building interactive, user-centric websites that enhance your digital presence</p>
+            </div>
+
+            <div class="feats">
+                <img src="img4.png" class="img_feat">
+                <h2 class="Digital">Digital Marketing</h2>
+                <p>Boost your visibility and connect with your audience through innovative digital marketing strategies</p>
+            </div>
+        </div>
+        
+    </div>
+    <div class="our_work">
+        <div class="creative">
+            <img src="img5.png" class="img_creative">
+            <h2>Creative Frontier</h2>
+            <p>INNOVATIVE DIGITAL SOLUTIONS FOR BRAND GROWTH</p>
+            <div class="vertical-line"></div>
+            <div class="links1">
+                <a href="#" class="all">All</a>
+                <a href="#" class="all">Design</a>
+                <a href="#" class="all">Data</a>
+                <a href="#" class="all">Photo</a>
+                <a href="#" class="all">App</a>
+            </div>
+            
+        </div>
+        <div class="imgg">
+            <div class="img-container">
+                <img src="img6.jpg" alt="" class="imggg">
+                <div class="overlay-text">Graphic Design</div>
+            </div>
+            <div class="img-container">
+            <img src="img7.jpg" alt="" class="imggg">
+            <div class="overlay-text">Web Developpement</div>
+            </div>
+            <div class="img-container">
+            <img src="img8.jpg" alt="" class="imggg">
+            <div class="overlay-text">Digital Marketing</div>
+            </div>
+            <div class="img-container">
+            <img src="img9.jpg" alt="" class="imggg">
+            <div class="overlay-text">Smart App Developpement</div>
+            </div>
+            <div class="img-container">
+            <img src="img10.jpg" alt="" class="imggg">
+            <div class="overlay-text">Professional Photography</div>
+            </div>
+            <div class="img-container">
+            <img src="img11.jpg" alt="" class="imggg">
+            <div class="overlay-text">Search Engine Optimazation</div>
+            </div>
+            <div class="img-container">
+            <img src="img12.jpg" alt="" class="imggg">
+            <div class="overlay-text">Data Analysis</div>
+            </div>
+            <div class="img-container">
+            <img src="img13.jpg" alt="" class="imggg">
+
+            <div class="overlay-text">Digital Advertising</div>
+            </div>
+        </div>
+    
+    </div>
+
+
+    <script src="bondi1.js">
+        const links = document.querySelectorAll('.links1 a');
+
+// Add click event to each link
+links.forEach(link => {
+    link.addEventListener('click', () => {
+        // Remove 'active' class from all links
+        links.forEach(l => l.classList.remove('active'));
+        // Add 'active' class to the clicked link
+        link.classList.add('active');
+    });
+});
+
+function showText(container) {
+    // Supprimer la classe 'active' de toutes les images
+    document.querySelectorAll('.img-container').forEach(img => {
+        img.classList.remove('active');
+    });
+
+    // Ajouter la classe 'active' à l'image cliquée
+    container.classList.add('active');
+}
+    </script>
+
+
+
+</body>
+</html>
